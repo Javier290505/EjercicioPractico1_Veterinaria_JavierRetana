@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import com.veterinaria.demo.domain.TipoServicio;
 
 @Controller
 @RequestMapping("/servicios")
@@ -35,10 +36,16 @@ public class ServicioController {
 
     @GetMapping("/nuevo")
     public String nuevo(Model model) {
-        model.addAttribute("servicio", new Servicio());
-        model.addAttribute("tipos", tipoServicioService.obtenerTipos());
-        return "servicios/formulario";
-    }
+
+      Servicio servicio = new Servicio();
+
+      servicio.setTipoServicio(new TipoServicio());
+
+      model.addAttribute("servicio", servicio);
+      model.addAttribute("tipos", tipoServicioService.obtenerTipos());
+
+    return "servicios/formulario";
+}
 
     @GetMapping("/editar")
     public String editar(@RequestParam Integer id, Model model) {
