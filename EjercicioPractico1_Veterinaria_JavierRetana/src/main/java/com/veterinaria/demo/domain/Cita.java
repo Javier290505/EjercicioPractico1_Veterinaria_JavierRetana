@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package com.veterinaria.domain;
+package com.veterinaria.demo.domain;
 
 import jakarta.persistence.*;
 import java.io.Serializable;

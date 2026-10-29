@@ -3,9 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
 
-package com.veterinaria.service;
+package com.veterinaria.demo.service;
 
-import com.veterinaria.domain.Servicio;
+import com.veterinaria.demo.domain.Servicio;
 import java.util.List;
 
 public interface ServicioService {

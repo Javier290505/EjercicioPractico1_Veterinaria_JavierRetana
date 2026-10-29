@@ -3,10 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package com.veterinaria.service;
+package com.veterinaria.demo.service;
 
-import com.veterinaria.domain.Servicio;
-import com.veterinaria.repository.ServicioRepository;
+import com.veterinaria.demo.domain.Servicio;
+import com.veterinaria.demo.repository.ServicioRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

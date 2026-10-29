@@ -3,9 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
 
-package com.veterinaria.repository;
+package com.veterinaria.demo.repository;
 
-import com.veterinaria.domain.Cita;
+import com.veterinaria.demo.domain.Cita;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CitaRepository extends JpaRepository<Cita, Integer> {
